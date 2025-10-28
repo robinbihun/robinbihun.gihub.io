@@ -63,6 +63,7 @@ author:
   name: *name
   bio: "Software Engineering Leader. Building fast, scalable, automated applications and keeping the 'ick' out of it."
   location: "Chicago, IL"
+  avatar: "/assets/images/bio-photo.jpg"
   links:
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
