@@ -50,7 +50,6 @@ name: &name "Robin Bihun"
 description: &description >- 
   Robin Bihun, Software Engineering leader and tech enthusiast.
 url: "https://robin.bihun.dev" # the base hostname & protocol for your site, e.g. http://example.com
-baseurl: "/" # the subpath of your site, e.g. /blog
 repository: "robinbihun/robinbihun.github.io"
 
 atom_feed:
