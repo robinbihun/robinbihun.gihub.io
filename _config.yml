@@ -76,6 +76,12 @@ defaults:
       related: true
       show_date: true
 
+analytics:
+  provider: "google-gtag"
+  google: 
+    tracking_id: "G-PXXDSP6983"
+    anonymize_ip: false
+
 include:
   - _posts
   - _pages
