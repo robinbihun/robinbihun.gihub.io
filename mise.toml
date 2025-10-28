@@ -11,7 +11,7 @@ run = "bundle install"
 [tasks.serve]
 description = "Start the jekyll server"
 alias = "s"
-run = "jekyll serve"
+run = "bundle exec jekyll serve"
 
 [tasks.lint]
 description = "Run lint"
