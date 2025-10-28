@@ -83,6 +83,7 @@ defaults:
       share: true
       related: true
       show_date: true
+      classes: wide
 
 analytics:
   provider: "google-gtag"
