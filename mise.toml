@@ -1,0 +1,19 @@
+[env]
+PROJECT_NAME = "Robin Bihun - Blog"
+
+[tools]
+ruby = "latest"
+
+[tasks."bundle:install"]
+description = "Install gem dependencies"
+run = "bundle install"
+
+[tasks.serve]
+description = "Start the jekyll server"
+alias = "s"
+run = "jekyll serve"
+
+[tasks.lint]
+description = "Run lint"
+alias = "l"
+run = "rubocop -a"

@@ -1,0 +1,103 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+#
+# If you need help with YAML syntax, here are some quick references for you:
+# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
+# https://learnxinyminutes.com/docs/yaml/
+#
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+
+email: robin@bihun.dev
+github_username:  robinbihun
+
+# Build settings
+theme: minimal-mistakes-jekyll
+minimal_mistakes_skin: dark
+plugins:
+  - jekyll-include-cache
+  - jekyll-feed
+  - jekyll-paginate-v2
+
+pagination:
+  enabled: true
+  collection: 'posts'
+  per_page: 5
+  permalink: '/page/:num'
+  title: ':title - page :num'
+  limit: 0
+  sort_field: 'date'
+  sort_reverse: true
+  trail:
+    before: 2
+    after: 2
+
+# Site Settings
+locale: 'en-US'
+title: Robin Bihun
+title_separator: "-"
+name: &name "Robin Bihun"
+description: &description >- 
+  Robin Bihun, Software Engineering leader and tech enthusiast.
+url: "https://robin.bihun.dev" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/" # the subpath of your site, e.g. /blog
+repository: "robinbihun/robinbihun.github.io"
+
+atom_feed:
+  path:
+
+search: false
+search_full_content: false
+
+author:
+  name: *name
+  bio: "Software Engineering Leader. Building fast, scalable, automated applications and keeping the 'ick' out of it."
+  location: "Chicago, IL"
+
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      comments: false
+      share: true
+      related: true
+      show_date: true
+
+include:
+  - _posts
+  - _pages
+
+# Exclude from processing.
+# The following items will not be processed, by default.
+# Any item listed under the `exclude:` key here will be automatically added to
+# the internal "default list".
+#
+# Excluded items can be processed by explicitly listing the directories or
+# their entries' file path in the `include:` list.
+#
+exclude:
+  - mise.toml
+#   - .sass-cache/
+#   - .jekyll-cache/
+#   - gemfiles/
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules/
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
